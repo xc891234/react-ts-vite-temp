@@ -49,14 +49,14 @@
     }
   },
   "lint-staged": {
-    "/src/**/*.tsx": [
+    "**/*.tsx": [
       "prettier --write",
       "eslint --cache --fix"
     ],
-    "/src/**/*.ts": [
+    "**/*.ts": [
       "eslint --cache --fix"
     ],
-    "/src/**/*.{less,css}": [
+    "**/*.{less,css}": [
       "prettier --write"
     ]
   }

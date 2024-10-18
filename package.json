@@ -49,15 +49,14 @@
     }
   },
   "lint-staged": {
-    "**/*.tsx": [
+    "*.tsx": [
       "prettier --write",
-      "eslint --cache --fix"
+      "eslint --cache --fix",
+      "git add"
     ],
-    "**/*.ts": [
-      "eslint --cache --fix"
-    ],
-    "**/*.{less,css}": [
-      "prettier --write"
+    "*.{less,css}": [
+      "prettier --write",
+      "git add"
     ]
   }
 }
